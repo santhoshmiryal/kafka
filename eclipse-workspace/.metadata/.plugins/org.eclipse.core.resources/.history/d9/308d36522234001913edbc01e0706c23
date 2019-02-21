@@ -1,0 +1,25 @@
+package com.boa.client.serializer;
+
+ 
+import java.util.Map;
+
+import org.apache.kafka.common.serialization.Serializer;
+
+import com.boa.client.json.Employee;
+
+public class EmployeeSerializer implements Serializer<Employee> {
+	public void close() {
+	}
+
+	public byte[] serialize(String arg0, Employee data) {
+		return null;
+		// TODO Auto-generated method stub
+	 
+	}
+
+	public void configure(Map<String, ?> arg0, boolean arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

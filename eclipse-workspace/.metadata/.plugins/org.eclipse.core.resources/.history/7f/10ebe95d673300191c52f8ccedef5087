@@ -1,0 +1,5 @@
+package Kafka.Kafka;
+
+public class MessagePartitioner {
+
+}

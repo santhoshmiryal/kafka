@@ -1,0 +1,6 @@
+package com.boa.components;
+
+@XmlRootElement
+public class Employee {
+
+}

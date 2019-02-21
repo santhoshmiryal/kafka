@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.producer.KafkaProducer"/>
+<fullyQualifiedTypeName name="org.apache.kafka.common.serialization.StringDeserializer"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.consumer.KafkaConsumer"/>
+<fullyQualifiedTypeName name="java.util.function.Consumer"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.time.Duration"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.consumer.ConsumerRecord"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.producer.Partitioner"/>
+<fullyQualifiedTypeName name="org.apache.kafka.common.TopicPartition"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.producer.Callback"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlRootElement"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlType"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.util.Pool.Unmarshaller"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.apache.kafka.common.serialization.Serializer"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.util.Pool.Marshaller"/>
+<fullyQualifiedTypeName name="javax.xml.bind.Marshaller"/>
+<fullyQualifiedTypeName name="org.apache.kafka.common.serialization.Deserializer"/>
+<fullyQualifiedTypeName name="javax.xml.bind.JAXBContext"/>
+<fullyQualifiedTypeName name="javax.xml.bind.Unmarshaller"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.producer.ProducerRecord"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Future"/>
+<fullyQualifiedTypeName name="org.apache.kafka.clients.producer.RecordMetadata"/>
+<fullyQualifiedTypeName name="com.boa.components.Employee"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonRootName"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.core.JsonProcessingException"/>
+<fullyQualifiedTypeName name="com.boa.client.json.Employee"/>
+<fullyQualifiedTypeName name="com.boa.client.json.Address"/>
+</qualifiedTypeNameHistroy>

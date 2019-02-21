@@ -1,0 +1,9 @@
+package Kafka.Kafka;
+
+public class MessageSender {
+	
+	public static void main(String args[]){
+		
+	}
+	{
+}

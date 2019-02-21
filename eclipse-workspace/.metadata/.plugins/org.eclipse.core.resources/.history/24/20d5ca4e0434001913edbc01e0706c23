@@ -1,0 +1,15 @@
+package com.boa.components;
+
+import javax.xml.bind.JAXBContext;
+
+ 
+
+public class MarshellTest {
+	
+	public static void main(String args[]) {
+		JAXBContext context=JAXBContext.newInstance(Employee.class);
+		Marshaller marshaller=context.createMarshaller();
+		
+	}
+
+}

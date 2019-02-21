@@ -1,0 +1,22 @@
+package Kafka.Kafka;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+
+public class MessageReceiver {
+
+	public static void main(String args[]) {
+		Properties props=new Properties();
+		props.setProperty("bootstrap.servers", "localhost:9092");
+		props.setProperty("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+		props.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+		KafkaConsumer<String, String> consumer=new KafkaConsumer<String, String>(props);
+		String topicName="first-topic";
+		ProducerRecord<String, String> record=
+				new ProducerRecord<String, String>(topicName, "message-1","This is a test sdsdsdsds");
+	}
+	
+}

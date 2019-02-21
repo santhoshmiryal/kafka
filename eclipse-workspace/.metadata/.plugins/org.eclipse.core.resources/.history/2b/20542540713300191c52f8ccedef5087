@@ -1,0 +1,5 @@
+package Kafka.partition;
+
+public class MessageSenderOffset {
+
+}

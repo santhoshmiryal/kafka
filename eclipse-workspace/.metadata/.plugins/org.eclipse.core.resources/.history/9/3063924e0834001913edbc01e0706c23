@@ -1,0 +1,27 @@
+package com.boa.components;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+ 
+
+public class UnMarshellTest {
+	
+	public static void main(String args[]) throws JAXBException, IOException {
+		JAXBContext context=JAXBContext.newInstance(Employee.class);
+		UnMarshaller marshaller=context.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		Employee employee=new Employee(100,"Santhosh","LEADANALSYT");
+		FileOutputStream fileOutputStream=new FileOutputStream("employee.xml");
+		marshaller.marshal(employee, fileOutputStream);
+		fileOutputStream.close();
+		System.out.println("Marshalling is done!!");
+		
+	}
+
+}

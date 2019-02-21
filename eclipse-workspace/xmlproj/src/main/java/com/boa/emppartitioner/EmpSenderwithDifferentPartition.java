@@ -1,0 +1,38 @@
+package com.boa.emppartitioner;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+
+import com.boa.components.Employee;
+
+public class EmpSenderwithDifferentPartition {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Properties props = new Properties();
+		props.setProperty("bootstrap.servers", "localhost:9092");
+		props.setProperty("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+		props.setProperty("value.serializer", "com.boa.client.serializer.EmployeeSerializer");
+	    props.setProperty("partitioner.class", "com.boa.emppartitioner.EmployeeMessagePartitioner");//this will set the partitioner.
+
+		KafkaProducer<String, Employee> producer = new KafkaProducer<String, Employee>(props);
+		String topicName = "emp-topic";
+			ProducerRecord<String, Employee> acct = new ProducerRecord<String, Employee>(topicName, "Accountant",
+					new Employee(1, "Acct", "Accountant"));
+			producer.send(acct);
+			ProducerRecord<String, Employee> dev = new ProducerRecord<String, Employee>(topicName, "Developer",
+					new Employee(2, "Dev", "Developer"));
+			producer.send(dev);
+			ProducerRecord<String, Employee> arc = new ProducerRecord<String, Employee>(topicName, "Architech",
+					new Employee(3, "Artc", "Architech"));
+			producer.send(arc);
+			ProducerRecord<String, Employee> other = new ProducerRecord<String, Employee>(topicName, "other",
+					new Employee(3, "other", "other"));
+			producer.send(arc);
+		System.out.println("messages sent");
+
+	}
+
+}

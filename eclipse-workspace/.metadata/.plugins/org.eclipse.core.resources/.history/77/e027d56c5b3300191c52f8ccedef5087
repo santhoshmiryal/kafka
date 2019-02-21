@@ -1,0 +1,17 @@
+package Kafka.Kafka;
+
+import java.util.Properties;
+
+public class MessageSender {
+	
+	public static void main(String args[]){
+	Properties properties=new Properties();
+	properties.setProperty("bootstarp.servers", "localhost:9092");
+	properties.setProperty("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+	properties.setProperty("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+	
+	
+	
+	}
+	
+}

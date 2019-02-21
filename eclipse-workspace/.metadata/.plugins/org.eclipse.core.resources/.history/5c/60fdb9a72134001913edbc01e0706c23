@@ -1,0 +1,43 @@
+package com.boa.client.serializer;
+
+import java.io.StringWriter;
+import java.util.Map;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+import org.apache.kafka.common.serialization.Serializer;
+
+import com.boa.client.json.Employee;
+
+public class EmployeeSerializer implements Serializer<Employee> {
+	public void close() {
+	}
+
+	public void configure(Map<String, ?> arg0, boolean arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public byte[] serialize(String arg0, Employee data) {
+		// TODO Auto-generated method stub
+		JAXBContext context;
+		String xmlContent = null;
+		try {
+			context = JAXBContext.newInstance(Employee.class);
+			Marshaller marshaller = context.createMarshaller();
+			StringWriter writer = new StringWriter();
+			marshaller.marshal(data, writer);
+			xmlContent = writer.toString();
+			System.out.print(xmlContent.getBytes());
+
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return xmlContent.getBytes();
+	}
+
+}

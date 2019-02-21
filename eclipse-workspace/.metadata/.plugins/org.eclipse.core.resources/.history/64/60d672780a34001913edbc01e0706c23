@@ -1,0 +1,5 @@
+package com.boa.client.deserializer;
+
+public class EmployeeDeserializer {
+
+}

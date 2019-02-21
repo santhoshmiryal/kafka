@@ -1,0 +1,17 @@
+package com.boa.client.serializer;
+
+ 
+import java.util.Map;
+
+import org.apache.kafka.common.serialization.Serializer;
+
+import com.boa.client.json.Employee;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class EmployeeSerializer implements Serializer<Employee>{
+
+  
+
+	 
+}

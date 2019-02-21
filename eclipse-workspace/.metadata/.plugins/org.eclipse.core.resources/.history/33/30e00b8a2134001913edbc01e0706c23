@@ -1,0 +1,5 @@
+package com.boa.client.json;
+
+public class EmployeeSeriallizer {
+
+}

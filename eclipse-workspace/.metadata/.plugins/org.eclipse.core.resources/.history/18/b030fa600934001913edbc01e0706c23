@@ -1,0 +1,12 @@
+package com.boa.client.serializer;
+
+import java.io.Serializable;
+
+public class EmployeeSerializer implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}
